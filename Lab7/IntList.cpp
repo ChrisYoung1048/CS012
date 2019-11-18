@@ -58,11 +58,11 @@ ostream &operator<<(ostream &out, const IntList &list) {
     IntNode *current = list.head;
     while (current) {
         if (current->next == nullptr) {
-            cout << current->data;
+            out << current->data;
             current = current->next;
         }
         else {
-            cout << current->data << " ";
+            out << current->data << " ";
             current = current->next;
         }
     }
